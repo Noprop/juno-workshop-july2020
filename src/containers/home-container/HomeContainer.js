@@ -6,8 +6,7 @@ import HomePage from "../../pageComponents/HomePage";
 import { MOVIE_BASE_URL } from "../../utils/constants";
 
 export default class HomeContainer extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
     this.state = {
       error: null,
       isLoaded: false,

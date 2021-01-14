@@ -1,25 +1,47 @@
 .Search {
-    text-align: center;
-    padding-bottom: 1em;
+  text-align: center;
+  padding-bottom: 1em;
 }
-  
+
 .Search > input {
-    line-height: 2.5em;
-    width: 49%;
-    font-size: 15px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: 0;
-    margin-right: 5px;
+  line-height: 2.5em;
+  width: 49%;
+  font-size: 15px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 5px;
+  margin-bottom: 30px;
 }
 
 .Search > button {
-    line-height: 2.5em;
-    width: 100px;
-    background: #04addc;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 0;
+  line-height: 2.5em;
+  width: 100px;
+  background: #04addc;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 0;
+}
+
+.Search .output {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.movie h3 {
+  margin-top: 50%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
 }

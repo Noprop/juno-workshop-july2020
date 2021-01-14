@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Search from './components/search/Search';
+import Card from './components/card/Card';
 
-import HomeContainer from './containers/home-container'
+const App = () => {
+  const [displayMovie, setDisplayMovie] = useState({}); 
 
-function App() {
+  const showCard = (movie) => {
+    setDisplayMovie(movie);
+  }
+
   return (
     <div className="App">
       <h1>Juno x ecobee: Pair Programming Exercise</h1>
-      <HomeContainer />
+      <Search showCard={showCard} />
+      <Card movieInput={displayMovie} />
     </div>
   );
 }
